@@ -12,11 +12,6 @@ __icon__ = __addon__.getAddonInfo('icon')
 __ID__ = __addon__.getAddonInfo('id')
 __language__ = __addon__.getLocalizedString
 
-__profile__ = xbmc.translatePath( __addon__.getAddonInfo('profile') )
-__resource__ = xbmc.translatePath( os.path.join( __cwd__, 'resources', 'lib' ) )
-
-sys.path.append (__resource__)
-
 global g_jumpBackSecs
 g_jumpBackSecs = 0
 
